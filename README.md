@@ -1,10 +1,12 @@
 # README
-## This is the README for your extension "papaja-theme"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## Installation for development, without using the Marketplace
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+- Clone the project in your development folder
+- Create a symlink in your vscode installation to make the theme accessible:
+    ```sh
+    cd ~/.vscode/extensions
+    ln -s <path-to-your-development-folder> papaja.papaja-theme
+    ```
 
 ### For more information
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
