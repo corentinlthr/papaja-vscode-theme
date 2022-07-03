@@ -6,7 +6,7 @@
 
     "name": "Papaja Theme",
     "type": "dark",
-    "colors": {
+    "colors":   {
         "activityBar.activeBorder": "#fdba74",
         "activityBar.activeFocusBorder": "#fdba74",
         "activityBar.background": "#27272a",
@@ -58,7 +58,7 @@
                 "comment.block.documentation",
                 "entity.name.type.instance.jsdoc",
                 "keyword.other.phpdoc",
-                "meta.class.body meta.other.type.phpdoc support.other.namespace",
+                "meta.other.type.phpdoc support.other.namespace",
                 "meta.other.type.phpdoc punctuation.separator.delimiter.php",
                 "punctuation.definition.block.tag.jsdoc",
                 "punctuation.definition.bracket.curly.begin.jsdoc",
@@ -180,10 +180,9 @@
 
         {
             "scope": [
-
                 "meta.import punctuation.definition",
                 "meta.function.parameter.typehinted support.other.namespace",
-                "meta.class.body support.other.namespace",
+                "support.other.namespace",
                 "meta.function.echo.blade",
 
             ],
