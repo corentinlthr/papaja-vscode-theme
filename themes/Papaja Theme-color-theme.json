@@ -95,6 +95,14 @@
         },
         {
             "scope": [
+                "source.js punctuation.definition.tag",
+            ],
+            "settings": {
+                "foreground": "#ffffff55"
+            }
+        },
+        {
+            "scope": [
                 "meta.namespace",
             ],
             "settings": {
@@ -121,27 +129,31 @@
         },
         {
             "scope": [
-                "meta.namespace.php",
-                "meta.use keyword",
-                "meta.import keyword",
+                "keyword.control.at-rule.import punctuation.definition",
                 "keyword.control.export",
                 "keyword.control.return",
+                "keyword.other.type",
+                "meta.at-rule.import keyword.control.at-rule.import",
+                "meta.attribute entity.other.attribute-name",
+                "meta.import keyword",
+                "meta.namespace.php",
+                "meta.tag.attributes entity.other.attribute-name",
+                "meta.use keyword",
                 "storage",
                 "support.type.property-name",
-                "keyword.other.type",
-                "keyword.control.at-rule.import punctuation.definition",
-                "meta.at-rule.import keyword.control.at-rule.import",
-                "meta.attribute entity.other.attribute-name"
             ],
             "settings": {
                 "foreground": "#fdba74"
             }
         },
+
+        // Light Blue
         {
             "scope": [
                 "begin.bracket.round",
                 "constant",
                 "end.bracket.round",
+                "entity.name.tag.html",
                 "entity.name",
                 "entity.other.inherited-class",
                 "meta.brace.round",
@@ -151,23 +163,24 @@
                 "meta.function.echo.blade source",
                 "meta.function.parameter.typehinted support.class",
                 "meta.import variable.other.readwrite.alias",
+                "meta.tag.attributes keyword.operator",
                 "meta.use support.other.namespace",
                 "punctuation.definition",
-                "punctuation.section",
                 "punctuation.section.array",
+                "punctuation.section",
                 "punctuation.separator",
                 "punctuation.terminator",
                 "support.class",
                 "support.function.js",
+                "support.function.misc.scss",
                 "support.type.graphql",
-                "support.function.misc.scss"
-
             ],
             "settings": {
                 "foreground": "#7dd3fc"
             }
         },
 
+        // Light Blue Italic
         {
             "scope": [
                 "variable.language.this.php",
@@ -178,19 +191,21 @@
             }
         },
 
+        // Lighe Blue Faded Out
         {
             "scope": [
-                "meta.import punctuation.definition",
-                "meta.function.parameter.typehinted support.other.namespace",
-                "support.other.namespace",
                 "meta.function.echo.blade",
-
+                "meta.function.parameter.typehinted support.other.namespace",
+                "meta.import punctuation.definition",
+                "punctuation.definition.tag",
+                "support.other.namespace",
             ],
             "settings": {
                 "foreground": "#7dd3fc55"
             }
         },
 
+        // Light Blue Faded Out Italic
         {
             "scope": [
                 "meta.use support.other.namespace",
@@ -202,18 +217,23 @@
             }
         },
 
+
+        // Light Purple
+
         {
             "scope": [
                 "keyword",
                 "constant.language",
-                "entity.other.attribute-name"
+                "entity.name support.class.component",
+                "entity.other.attribute-name",
             ],
             "settings": {
                 "foreground": "#d8b4fe"
             }
         },
+
+        // Yellow
         {
-            "name": "Blade",
             "scope": [
                 "meta.directive.blade",
                 "keyword.blade",
@@ -262,7 +282,6 @@
             "scope": [
                 "keyword.operator",
                 "storage.type.function.arrow.js",
-                "meta.arrow.js",
                 "keyword.type.graphql",
                 "keyword.input.graphql",
                 "meta.function-call punctuation.accessor",
@@ -327,30 +346,6 @@
 
 
         // HTML
-
-        {
-            "name": "Tags",
-            "scope": [
-                "entity.name.tag.html",
-                "entity.name.tag.js",
-            ],
-            "settings": {
-                // "foreground": "#a5b4fc"
-                // "foreground": "#d8b4fe"
-                // "foreground": "#0ea5e9" // Blue
-                "foreground": "#a5b4fc" // Purple
-            }
-        },
-        {
-            "name": "Tags symbols",
-            "scope": [
-                "punctuation.definition.tag",
-            ],
-            "settings": {
-                // "foreground": "#a5b4fc44"
-                "foreground": "#a5b4fc44"
-            }
-        },
 
         {
             "name": "HTML Entities",
