@@ -75,7 +75,6 @@
             }
         },
         {
-            "name": "Variables",
             "scope": [
                 "variable",
             ],
@@ -84,7 +83,6 @@
             }
         },
         {
-            "name": "PHP Namespace Prefix",
             "scope": [
                 "support.other.namespace",
             ],
@@ -95,7 +93,8 @@
         },
         {
             "scope": [
-                "source.js punctuation.definition.tag",
+                "source.js punctuation.definition.tag", // JSX tags < >
+                "meta.tag.other punctuation.definition", // < > for invalid html tags
             ],
             "settings": {
                 "foreground": "#ffffff55"
@@ -109,6 +108,10 @@
                 "fontStyle": "italic",
             }
         },
+
+
+        // MARK: purple-400
+
         {
             "scope": [
 
@@ -127,6 +130,10 @@
                 "foreground": "#c084fc"
             }
         },
+
+
+        // MARK:  orange-300
+
         {
             "scope": [
                 "keyword.control.at-rule.import punctuation.definition",
@@ -134,26 +141,49 @@
                 "keyword.control.return",
                 "keyword.other.type",
                 "meta.at-rule.import keyword.control.at-rule.import",
-                "meta.attribute entity.other.attribute-name",
                 "meta.import keyword",
                 "meta.namespace.php",
-                "meta.tag.attributes entity.other.attribute-name",
                 "meta.use keyword",
                 "storage",
-                "support.type.property-name",
+                "keyword.operator",
+                "storage.type.function.arrow.js",
+                "keyword.type.graphql",
+                "keyword.input.graphql",
+                "meta.function-call punctuation.accessor",
+                "meta.object.member punctuation.accessor",
+                "variable.parameter.tailwind",
+                "meta.structure.dictionary.value.json",
+                "string.quoted.double.json",
+                "punctuation.definition.string.begin.json",
+                "punctuation.definition.string.end.json"
             ],
             "settings": {
                 "foreground": "#fdba74"
             }
         },
+        {
+            "scope": [
+                "meta.attribute entity.other.attribute-name",
+                "meta.tag.attributes entity.other.attribute-name",
+                "support.type.property-name",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#fdba74"
+            }
+        },
 
-        // Light Blue
+
+
+        // MARK: sky-300
+
         {
             "scope": [
                 "begin.bracket.round",
                 "constant",
                 "end.bracket.round",
-                "entity.name.tag.html",
+                "meta.tag.structure entity.name.tag.html",
+                "meta.tag.inline entity.name.tag.html",
                 "entity.name",
                 "entity.other.inherited-class",
                 "meta.brace.round",
@@ -164,6 +194,7 @@
                 "meta.function.parameter.typehinted support.class",
                 "meta.import variable.other.readwrite.alias",
                 "meta.tag.attributes keyword.operator",
+                "meta.tag.other punctuation.definition.variable",
                 "meta.use support.other.namespace",
                 "punctuation.definition",
                 "punctuation.section.array",
@@ -174,13 +205,16 @@
                 "support.function.js",
                 "support.function.misc.scss",
                 "support.type.graphql",
+                "meta.function-call",
+                "support.function.js",
+                "meta.function-call.js",
+                "meta.method-call",
             ],
             "settings": {
                 "foreground": "#7dd3fc"
             }
         },
 
-        // Light Blue Italic
         {
             "scope": [
                 "variable.language.this.php",
@@ -191,13 +225,13 @@
             }
         },
 
-        // Lighe Blue Faded Out
         {
             "scope": [
                 "meta.function.echo.blade",
                 "meta.function.parameter.typehinted support.other.namespace",
                 "meta.import punctuation.definition",
-                "punctuation.definition.tag",
+                "meta.tag.structure punctuation.definition.tag", // HTML entities
+                "meta.tag.inline punctuation.definition.tag", // HTML entities
                 "support.other.namespace",
             ],
             "settings": {
@@ -205,7 +239,6 @@
             }
         },
 
-        // Light Blue Faded Out Italic
         {
             "scope": [
                 "meta.use support.other.namespace",
@@ -218,7 +251,7 @@
         },
 
 
-        // Light Purple
+        // MARK: purple-300
 
         {
             "scope": [
@@ -226,13 +259,31 @@
                 "constant.language",
                 "entity.name support.class.component",
                 "entity.other.attribute-name",
+                "meta.tag.custom entity.name.tag.html", // HTML custom component name
+                "constant.language.php",
+                "string constant.character.escape",
+                "support.type.property-name.json",
+                "meta.object-literal.key",
+                "variable.object.property.js",
+                "variable.parameter.graphql",
+                "support.type.object.module",
             ],
             "settings": {
                 "foreground": "#d8b4fe"
             }
         },
 
-        // Yellow
+        {
+            "scope": [
+                "meta.tag.custom punctuation.definition.tag", // HTML custom component < `
+            ],
+            "settings": {
+                "foreground": "#d8b4fe55"
+            }
+        },
+
+        // MARK: amber-100
+
         {
             "scope": [
                 "meta.directive.blade",
@@ -242,65 +293,42 @@
 
                 "keyword.control.at-rule",
                 "keyword.control.at-rule punctuation.definition",
-
             ],
             "settings": {
                 "foreground": "#fef3c7"
             }
         },
 
-
-
-
-
-
-
-
+        // MARK: pink-300
 
         {
-            "name": "Functions",
             "scope": [
-                "meta.function-call",
-                "support.function.js",
-                "meta.function-call.js",
+                "meta.tag.other entity.name.tag"
             ],
             "settings": {
-                "foreground": "#7dd3fc"
+                "foreground": "#f9a8d4"
             }
         },
-        {
-            "name": "Punctuation",
-            "scope": [
 
-            ],
-            "settings": {
-                "foreground": "#7dd3fc"
-            }
-        },
+
+
+        // MARK: Force non-italic
+
         {
-            "name": "Keywords",
             "scope": [
-                "keyword.operator",
-                "storage.type.function.arrow.js",
-                "keyword.type.graphql",
-                "keyword.input.graphql",
-                "meta.function-call punctuation.accessor",
-                "meta.object.member punctuation.accessor",
+                "support.type.property-name.json" // JSON key
             ],
             "settings": {
-                "foreground": "#fdba74"
-                // "foreground": "#fb7185"
+                "fontStyle": ""
             }
         },
-        {
-            "name": "PHP Constants – true, false, null",
-            "scope": [
-                "constant.language.php",
-            ],
-            "settings": {
-                "foreground": "#d8b4fe"
-            }
-        },
+
+
+
+
+
+
+
         {
             "name": "Constants",
             "scope": [
@@ -311,15 +339,7 @@
             }
         },
 
-        {
-            "name": "Method call",
-            "scope": [
-                "meta.method-call",
-            ],
-            "settings": {
-                "foreground": "#7dd3fc"
-            }
-        },
+
 
         {
             "name": "String",
@@ -331,15 +351,6 @@
                 "foreground": "#6ee7b7"
                 // "foreground": "#4ade80"
                 // "foreground": "#bef264"
-            }
-        },
-        {
-            "name": "String Escape Character",
-            "scope": [
-                "string constant.character.escape",
-            ],
-            "settings": {
-                "foreground": "#d8b4fe"
             }
         },
 
@@ -355,82 +366,6 @@
             ],
             "settings": {
                 "foreground": "#a5b4fc"
-            }
-        },
-
-        {
-            "name": "Tailwind base/components/utilities",
-            "scope": [
-                "variable.parameter.tailwind",
-            ],
-            "settings": {
-                "foreground": "#fdba74"
-            }
-        },
-
-
-
-
-        // JSON / JS / GraphQL / TS
-
-        {
-            "name": "Tags",
-            "scope": [
-                "support.type.object.module.js",
-                "support.class.builtin.js",
-                "support.constant.math.js",
-                "support.type.primitive"
-                // "variable.other.object.js"
-            ],
-            "settings": {
-                "foreground": "#0ea5e9"
-            }
-        },
-        {
-            "name": "JSON Key",
-            "scope": [
-                "support.type.property-name.json",
-                "meta.object-literal.key",
-                "variable.object.property.js",
-                "variable.parameter.graphql",
-                "support.type.object.module"
-            ],
-            "settings": {
-                "foreground": "#d8b4fe"
-            }
-        },
-        {
-            "name": "JSON Value",
-            "scope": [
-                "meta.structure.dictionary.value.json",
-                "string.quoted.double.json",
-                "punctuation.definition.string.begin.json",
-                "punctuation.definition.string.end.json"
-            ],
-            "settings": {
-                "foreground": "#fdba74"
-            }
-        },
-        {
-            "name": "JSON Punctuation",
-            "scope": [
-                "punctuation.separator.dictionary.pair.json",
-                "punctuation.separator.dictionary.key-value.json",
-                "punctuation.definition.string.begin.json",
-                "punctuation.definition.string.end.json",
-                "punctuation.support.type.property-name.begin.json",
-                "punctuation.support.type.property-name.end.json",
-                "punctuation.separator.array.json.comments",
-                "punctuation.separator.comma.js",
-                "meta.brace.round.graphql",
-                "punctuation.operation.graphql",
-                "meta.brace.square.graphql",
-                "meta.brace.round.directive.graphql",
-                "meta.brace.round.js",
-                "meta.brace.square.js"
-            ],
-            "settings": {
-                "foreground": "#7dd3fc"
             }
         },
 
