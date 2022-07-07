@@ -130,6 +130,15 @@
                 "foreground": "#c084fc"
             }
         },
+        {
+            "scope": [
+                "text.html.php punctuation.section.embedded.begin.php",
+                "text.html.php punctuation.section.embedded.end.php"
+            ],
+            "settings": {
+                "foreground": "#c084fc44"
+            }
+        },
 
 
         // MARK:  orange-300
