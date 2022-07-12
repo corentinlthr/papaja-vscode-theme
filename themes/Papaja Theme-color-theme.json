@@ -1,6 +1,7 @@
 {
-    // zinc-800: #27272a
+    // zinc-1000: #121214
     // zinc-900: #18181b
+    // zinc-800: #27272a
     // zinc-700 #3f3f46
 
 
@@ -9,12 +10,12 @@
     "colors":   {
         "activityBar.activeBorder": "#fdba74",
         "activityBar.activeFocusBorder": "#fdba74",
-        "activityBar.background": "#27272a",
+        "activityBar.background": "#18181b",
         "activityBar.border": "#3f3f46",
         "activityBar.foreground": "#d4d4d8",
         "activityBarBadge.background": "#c084fc",
         "activityBarBadge.foreground": "#fff",
-        "editor.background": "#27272a",
+        "editor.background": "#18181b",
         "editor.foldBackground": "#1f293733",
         "editor.foreground": "#d4d4d8",
         "editorGutter.addedBackground": "#4ade8033",
@@ -24,18 +25,18 @@
         "focusBorder": "#c084fc77",
         "list.activeSelectionBackground": "#c084fc33",
         "list.activeSelectionForeground": "#d4d4d8",
-        "list.hoverBackground": "#27272a",
+        "list.hoverBackground": "#18181b",
         "list.hoverForeground": "#d4d4d8",
         "list.inactiveFocusBackground": "#1d2d3e",
-        "list.inactiveSelectionBackground": "#27272a",
+        "list.inactiveSelectionBackground": "#18181b",
         "list.inactiveSelectionForeground": "#d4d4d8",
-        "panel.background": "#18181b",
-        "quickInput.background": "#18181b",
-        "sideBar.background": "#18181b",
+        "panel.background": "#121214",
+        "quickInput.background": "#121214",
+        "sideBar.background": "#121214",
         "sideBar.border": "#3f3f46",
         "sideBar.foreground": "#6b7280",
         "sideBarTitle.foreground": "#bbbbbb",
-        "terminal.background": "#18181b",
+        "terminal.background": "#121214",
     },
     "semanticHighlighting": true,
     "tokenColors": [
@@ -60,6 +61,7 @@
                 "keyword.other.phpdoc",
                 "meta.other.type.phpdoc support.other.namespace",
                 "meta.other.type.phpdoc punctuation.separator.delimiter.php",
+                "meta.other.type.phpdoc keyword.other.type",
                 "punctuation.definition.block.tag.jsdoc",
                 "punctuation.definition.bracket.curly.begin.jsdoc",
                 "punctuation.definition.bracket.curly.end.jsdoc",
@@ -158,13 +160,13 @@
                 "storage.type.function.arrow.js",
                 "keyword.type.graphql",
                 "keyword.input.graphql",
-                "meta.function-call punctuation.accessor",
+                "punctuation.accessor.js",
                 "meta.object.member punctuation.accessor",
                 "variable.parameter.tailwind",
                 "meta.structure.dictionary.value.json",
                 "string.quoted.double.json",
                 "punctuation.definition.string.begin.json",
-                "punctuation.definition.string.end.json"
+                "punctuation.definition.string.end.json",
             ],
             "settings": {
                 "foreground": "#fdba74"
@@ -276,6 +278,7 @@
                 "variable.object.property.js",
                 "variable.parameter.graphql",
                 "support.type.object.module",
+                "variable.other.object.property.js",
             ],
             "settings": {
                 "foreground": "#d8b4fe"
@@ -312,7 +315,8 @@
 
         {
             "scope": [
-                "meta.tag.other entity.name.tag"
+                "meta.tag.other entity.name.tag",
+
             ],
             "settings": {
                 "foreground": "#f9a8d4"
@@ -342,6 +346,7 @@
             "name": "Constants",
             "scope": [
                 "constant.other.php",
+                "variable.other.property.js",
             ],
             "settings": {
                 "foreground": "#a5b4fc"
