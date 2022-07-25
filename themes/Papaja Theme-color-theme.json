@@ -122,6 +122,7 @@
                 "foreground": "#c084fc"
             }
         },
+
         {
             "scope": [
                 "meta.namespace entity.name.type.namespace",
@@ -172,6 +173,7 @@
                 "foreground": "#fdba74"
             }
         },
+
         {
             "scope": [
                 "meta.attribute entity.other.attribute-name",
@@ -233,6 +235,18 @@
             "settings": {
                 "fontStyle": "italic",
                 "foreground": "#7dd3fc"
+            }
+        },
+
+        {
+            "scope": [
+                "meta.method-call.php punctuation.separator.colon",
+                "meta.method-call.php entity.name.variable.parameter",
+                "meta.function-call.php punctuation.separator.colon",
+                "meta.function-call.php entity.name.variable.parameter"
+            ],
+            "settings": {
+                "foreground": "#7dd3fc66"
             }
         },
 
@@ -346,6 +360,7 @@
             "name": "Constants",
             "scope": [
                 "constant.other.php",
+                "constant.other.class",
                 "variable.other.property.js",
             ],
             "settings": {
