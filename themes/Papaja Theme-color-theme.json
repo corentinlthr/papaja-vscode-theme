@@ -86,6 +86,15 @@
         },
         {
             "scope": [
+                "variable punctuation.definition.variable.php",
+                "punctuation.definition"
+            ],
+            "settings": {
+                "foreground": "#7dd3fc"
+            }
+        },
+        {
+            "scope": [
                 "support.other.namespace",
             ],
             "settings": {
@@ -288,12 +297,12 @@
                 "meta.tag.custom entity.name.tag.html", // HTML custom component name
                 "constant.language.php",
                 "string constant.character.escape",
-                "support.type.property-name.json",
                 "meta.object-literal.key",
                 "variable.object.property.js",
                 "variable.parameter.graphql",
                 "support.type.object.module",
                 "variable.other.object.property.js",
+                "constant"
             ],
             "settings": {
                 "foreground": "#d8b4fe"
@@ -340,14 +349,50 @@
 
 
 
-        // MARK: Force non-italic
+        // MARK: JSON
 
         {
             "scope": [
                 "support.type.property-name.json" // JSON key
             ],
             "settings": {
-                "fontStyle": ""
+                "fontStyle": "",
+                "foreground": "#cffafe"
+            }
+        },
+        {
+            "scope": [
+                "source.json punctuation",
+                "source.json punctuation.separator",
+                "source.json punctuation.definition",
+                "support.type.property-name.json punctuation",
+                "string.quoted.double.json punctuation",
+                "source.json punctuation.definition.string"
+            ],
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#71717a"
+            }
+        },
+
+        {
+            "scope": [
+                "string.quoted.double.json", // JSON string
+            ],
+            "settings": {
+                "foreground": "#fdba74"
+            }
+        },
+
+        // MARK: String
+
+        {
+            "scope": [
+                "string",
+                "punctuation.definition.string"
+            ],
+            "settings": {
+                "foreground": "#86efac"
             }
         },
 
@@ -369,20 +414,6 @@
             }
         },
 
-
-
-        {
-            "name": "String",
-            "scope": [
-                "string",
-                "punctuation.definition.string"
-            ],
-            "settings": {
-                "foreground": "#6ee7b7"
-                // "foreground": "#4ade80"
-                // "foreground": "#bef264"
-            }
-        },
 
 
 
