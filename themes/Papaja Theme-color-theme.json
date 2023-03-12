@@ -105,6 +105,7 @@
         {
             "scope": [
                 "meta.namespace",
+                "meta.function.closure storage.type"
             ],
             "settings": {
                 "fontStyle": "italic",
