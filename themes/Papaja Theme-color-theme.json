@@ -73,7 +73,7 @@
             ],
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#ffffff44"
+                "foreground": "#ffffff44",
             }
         },
         {
@@ -86,7 +86,6 @@
         },
         {
             "scope": [
-                "variable punctuation.definition.variable.php",
                 "punctuation.definition"
             ],
             "settings": {
@@ -175,9 +174,6 @@
                 "meta.object.member punctuation.accessor",
                 "variable.parameter.tailwind",
                 "meta.structure.dictionary.value.json",
-                "string.quoted.double.json",
-                "punctuation.definition.string.begin.json",
-                "punctuation.definition.string.end.json",
             ],
             "settings": {
                 "foreground": "#fdba74"
@@ -188,7 +184,6 @@
             "scope": [
                 "meta.attribute entity.other.attribute-name",
                 "meta.tag.attributes entity.other.attribute-name",
-                "support.type.property-name",
             ],
             "settings": {
                 "fontStyle": "italic",
@@ -210,6 +205,7 @@
                 "entity.name",
                 "entity.other.inherited-class",
                 "meta.brace.round",
+                "meta.brace.square",
                 "meta.class",
                 "meta.function-call.js",
                 "meta.function-call",
@@ -219,7 +215,6 @@
                 "meta.tag.attributes keyword.operator",
                 "meta.tag.other punctuation.definition.variable",
                 "meta.use support.other.namespace",
-                "punctuation.definition",
                 "punctuation.section.array",
                 "punctuation.section",
                 "punctuation.separator",
@@ -240,18 +235,10 @@
 
         {
             "scope": [
-                "variable.language.this.php",
-            ],
-            "settings": {
-                "fontStyle": "italic",
-                "foreground": "#7dd3fc"
-            }
-        },
-
-        {
-            "scope": [
                 "meta.method-call.php punctuation.separator.colon",
                 "meta.method-call.php entity.name.variable.parameter",
+                "meta.method-call.static.php punctuation.separator.colon",
+                "meta.method-call.static.php entity.name.variable.parameter",
                 "meta.function-call.php punctuation.separator.colon",
                 "meta.function-call.php entity.name.variable.parameter"
             ],
@@ -293,7 +280,6 @@
                 "keyword",
                 "constant.language",
                 "entity.name support.class.component",
-                "entity.other.attribute-name",
                 "meta.tag.custom entity.name.tag.html", // HTML custom component name
                 "constant.language.php",
                 "string constant.character.escape",
@@ -302,7 +288,8 @@
                 "variable.parameter.graphql",
                 "support.type.object.module",
                 "variable.other.object.property.js",
-                "constant"
+                "constant",
+                "support.function.construct" // PHP echo
             ],
             "settings": {
                 "foreground": "#d8b4fe"
@@ -340,7 +327,6 @@
         {
             "scope": [
                 "meta.tag.other entity.name.tag",
-
             ],
             "settings": {
                 "foreground": "#f9a8d4"
@@ -349,43 +335,88 @@
 
 
 
-        // MARK: JSON
 
+
+
+
+
+
+        // MARK: JSON
         {
             "scope": [
                 "support.type.property-name.json" // JSON key
             ],
             "settings": {
                 "fontStyle": "",
-                "foreground": "#cffafe"
+                "foreground": "#fed7aa"
             }
         },
         {
             "scope": [
+                // JSON Punctuation
                 "source.json punctuation",
                 "source.json punctuation.separator",
                 "source.json punctuation.definition",
                 "support.type.property-name.json punctuation",
                 "string.quoted.double.json punctuation",
-                "source.json punctuation.definition.string"
+                "source.json punctuation.definition.string",
+                // CSS Punctuation
+                "source.css punctuation.section",
+                "source.css punctuation.separator",
+                "source.css punctuation.terminator",
             ],
             "settings": {
                 "fontStyle": "",
                 "foreground": "#71717a"
             }
         },
+        // {
+        //     "scope": [
+        //         "string.quoted.double.json", // Override the default string color for json values
+        //     ],
+        //     "settings": {
+        //         "foreground": "#86efac"
+        //     }
+        // },
 
+        // MARK: CSS
         {
             "scope": [
-                "string.quoted.double.json", // JSON string
+                "source.css meta.property-name",
             ],
             "settings": {
-                "foreground": "#fdba74"
+                "foreground": "#fed7aa"
+            }
+        },
+        {
+            "scope": [
+                "source.css variable",
+            ],
+            "settings": {
+                "foreground": "#bae6fd"
+            }
+        },
+        {
+            "scope": [
+                "source.css punctuation.definition.entity",
+                "entity.other.attribute-name.pseudo-class"
+            ],
+            "settings": {
+                "foreground": "#D8B4FE"
+            }
+        },
+        {
+            "scope": [
+                "source.css entity.other.attribute-name",
+            ],
+            "settings": {
+                "foreground": "#7dd3fc"
             }
         },
 
-        // MARK: String
 
+
+        // MARK: String
         {
             "scope": [
                 "string",
@@ -396,29 +427,69 @@
             }
         },
 
-
-
-
-
-
-
+        // MARK: Constants
         {
             "name": "Constants",
             "scope": [
                 "constant.other.php",
                 "constant.other.class",
-                "variable.other.property.js",
             ],
             "settings": {
                 "foreground": "#a5b4fc"
             }
         },
 
+        // MARK: Variables
+        {
+            "scope":[
+                "variable.language.this",
+            ],
+            "settings": {
+                "foreground": "#7dd3fc",
+                "fontStyle": "italic"
+            }
+        },
 
+        // MARK: Properties
+        {
+            "scope":[
+                "variable.other.property",
+            ],
+            "settings": {
+                "foreground": "#bae6fd",
+            }
+        },
+        // MARK: Properties
+        {
+            "scope":[
+                "storage.modifier",
+            ],
+            "settings": {
+                "foreground": "#fde68a",
+            }
+        },
 
-
-        // HTML
-
+        // Switch cases
+        {
+            "scope":[
+                "keyword.control.case",
+                "keyword.control.break",
+                "keyword.control.default",
+                "case-clause keyword",
+                "meta.match-statement keyword.definition.arrow"
+            ],
+            "settings": {
+                "foreground": "#D8B4FE",
+            }
+        },
+        {
+            "scope":[
+                "keyword.control.default",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+            }
+        },
         {
             "name": "HTML Entities",
             "scope": [
