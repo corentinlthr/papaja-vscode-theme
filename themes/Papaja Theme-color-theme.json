@@ -164,7 +164,6 @@
                 "meta.at-rule.import keyword.control.at-rule.import",
                 "meta.import keyword",
                 "meta.namespace.php",
-                "meta.use keyword",
                 "storage",
                 "keyword.operator",
                 "storage.type.function.arrow.js",
@@ -179,6 +178,26 @@
                 "foreground": "#fdba74"
             }
         },
+
+        {
+            "scope": [
+                "meta.use keyword",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#fdba74"
+            }
+        },
+
+        {
+            "scope": [
+                "meta.use",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+            }
+        },
+
 
         {
             "scope": [
@@ -214,7 +233,6 @@
                 "meta.import variable.other.readwrite.alias",
                 "meta.tag.attributes keyword.operator",
                 "meta.tag.other punctuation.definition.variable",
-                "meta.use support.other.namespace",
                 "punctuation.section.array",
                 "punctuation.section",
                 "punctuation.separator",
@@ -263,11 +281,21 @@
 
         {
             "scope": [
-                "meta.use support.other.namespace",
-                "support.other.namespace punctuation.separator.inheritance.php"
+                "meta.use punctuation.separator.inheritance.php"
             ],
             "settings": {
                 "fontStyle": "italic",
+                "foreground": "#7dd3fc55"
+            }
+        },
+
+        {
+            "scope": [
+                "meta.class.body punctuation.separator.inheritance.php",
+                "meta.class.body support.other.namespace",
+            ],
+            "settings": {
+                "fontStyle": "",
                 "foreground": "#7dd3fc55"
             }
         },
