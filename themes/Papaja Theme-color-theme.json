@@ -293,6 +293,7 @@
             "scope": [
                 "meta.class.body punctuation.separator.inheritance.php",
                 "meta.class.body support.other.namespace",
+                "meta.class.body meta.function.parameter.typehinted support.other.namespace",
             ],
             "settings": {
                 "fontStyle": "",
