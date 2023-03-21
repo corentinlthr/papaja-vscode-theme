@@ -495,7 +495,8 @@
                 "storage.modifier",
             ],
             "settings": {
-                "foreground": "#fde68a",
+                "foreground": "#fed7aa",
+                // "foreground": "#fde68a",
             }
         },
 
