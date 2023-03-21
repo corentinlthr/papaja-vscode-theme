@@ -317,6 +317,7 @@
                 "support.type.object.module",
                 "variable.other.object.property.js",
                 "constant",
+                "constant punctuation.separator",
                 "support.function.construct" // PHP echo
             ],
             "settings": {
