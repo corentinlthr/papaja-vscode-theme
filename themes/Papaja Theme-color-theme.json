@@ -245,6 +245,7 @@
                 "support.function.js",
                 "meta.function-call.js",
                 "meta.method-call",
+                "support.function.construct" // PHP echo
             ],
             "settings": {
                 "foreground": "#7dd3fc"
@@ -319,7 +320,6 @@
                 "variable.other.object.property.js",
                 "constant",
                 "constant punctuation.separator",
-                "support.function.construct" // PHP echo
             ],
             "settings": {
                 "foreground": "#d8b4fe"
