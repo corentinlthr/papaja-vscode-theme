@@ -3,18 +3,27 @@
     "displayName": "papaja-theme",
     "description": "",
     "version": "0.0.1",
+    "type": "module",
     "engines": {
         "vscode": "^1.64.0"
     },
     "categories": [
         "Themes"
     ],
+    "scripts": {
+        "build": "node ./src/build.js"
+    },
     "contributes": {
         "themes": [
             {
-                "label": "Papaja Theme",
+                "label": "Papaja Blue",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Papaja Theme-color-theme.json"
+                "path": "./themes/Papaja-Blue.json"
+            },
+            {
+                "label": "Papaja Purple",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Papaja-Purple.json"
             }
         ]
     }
