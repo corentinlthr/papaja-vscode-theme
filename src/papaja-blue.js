@@ -12,27 +12,31 @@ const colors = {
     900: "#18181b",
     950: "#09090b",
   },
-  blue: "#7dd3fc",
+  blue: {
+    300: "#7dd3fc",
+    400: "#38bdf8",
+  },
   orange: "#fdba74",
   pink: "#d8b4fe",
   yellow: "#fed7aa",
+  green: "#86efac",
 };
 
 const scheme = {
   name: "Blue",
   type: "dark",
   colors: {
-    class: colors.blue,
+    class: colors.blue[400],
     comment: "#575760",
     constant: "#a5b4fc",
     keyword: colors.orange,
-    keywordControl: "#D8B4FE",
-    method: colors.blue,
+    keywordControl: colors.yellow,
+    method: colors.blue[300],
     property: "#bae6fd",
     punctuation: colors.gray[500],
     storageModifier: colors.yellow,
-    string: "#86efac",
-    stringQuote: "#86efac",
+    string: colors.green,
+    stringQuote: colors.green,
     variable: colors.gray[300],
   },
   editor: {
@@ -43,16 +47,21 @@ const scheme = {
       active: colors.gray[700],
     },
   },
-  terminal: {
-    background: "#121214",
+  panel: {
+    background: colors.gray[950],
+    foreground: colors.gray[300],
+  },
+  list: {
+    background: colors.gray[800],
+    foreground: colors.gray[300],
   },
   php: {
-    use: `${colors.blue}99`,
+    use: `${colors.blue[400]}55`,
   },
   html: {
-    tag: colors.blue,
+    tag: colors.blue[300],
     attribute: colors.orange,
-    component: colors.pink,
+    component: colors.blue[300],
     blade: colors.yellow,
   },
   json: {

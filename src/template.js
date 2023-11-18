@@ -10,20 +10,24 @@ export default function (scheme) {
       "editorLineNumber.foreground": scheme.editor.lineNumbers.all,
       "editorGutter.addedBackground": "#4ade8033",
       "editorGutter.modifiedBackground": "#fb923c52",
+      // Active item in the tree and list
       "list.activeSelectionBackground": "#c084fc33",
       "list.activeSelectionForeground": "#d4d4d8",
+      // Hover item in the tree and list
       "list.hoverBackground": "#18181b",
       "list.hoverForeground": "#d4d4d8",
+
       "list.inactiveFocusBackground": "#1d2d3e",
       "list.inactiveSelectionBackground": "#18181b",
       "list.inactiveSelectionForeground": "#d4d4d8",
-      "panel.background": "#121214",
-      "quickInput.background": "#121214",
-      "sideBar.background": "#121214",
+
+      "panel.background": scheme.panel.background,
+      "quickInput.background": scheme.list.background,
+      "sideBar.background": scheme.panel.background,
       "sideBar.border": "#3f3f46",
       "sideBar.foreground": "#6b7280",
       "sideBarTitle.foreground": "#bbbbbb",
-      "terminal.background": scheme.terminal.background,
+      "terminal.background": scheme.panel.background,
     },
     tokenColors: [
       // Comments and documentation
@@ -106,7 +110,7 @@ export default function (scheme) {
           "meta.tag.jsx keyword.operator.assignment",
         ],
         settings: {
-          foreground: `${scheme.colors.method}77`,
+          foreground: `${scheme.colors.punctuation}77`,
         },
       },
       {
