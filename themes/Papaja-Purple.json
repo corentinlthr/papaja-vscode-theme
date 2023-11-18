@@ -16,13 +16,13 @@
         "list.inactiveFocusBackground": "#1d2d3e",
         "list.inactiveSelectionBackground": "#18181b",
         "list.inactiveSelectionForeground": "#d4d4d8",
-        "panel.background": "#121214",
-        "quickInput.background": "#121214",
-        "sideBar.background": "#121214",
+        "panel.background": "#09090b",
+        "quickInput.background": "#27272a",
+        "sideBar.background": "#09090b",
         "sideBar.border": "#3f3f46",
         "sideBar.foreground": "#6b7280",
         "sideBarTitle.foreground": "#bbbbbb",
-        "terminal.background": "#121214"
+        "terminal.background": "#09090b"
     },
     "tokenColors": [
         {
@@ -57,7 +57,8 @@
                 "storage",
                 "keyword.control.flow",
                 "keyword.control.return",
-                "punctuation.accessor"
+                "punctuation.accessor",
+                "support.type.primitive"
             ],
             "settings": {
                 "foreground": "#e79882"
@@ -99,6 +100,15 @@
         },
         {
             "scope": [
+                "variable.language.super"
+            ],
+            "settings": {
+                "foreground": "#e79882",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": [
                 "punctuation",
                 "punctuation.definition.variable"
             ],
@@ -117,7 +127,7 @@
                 "meta.tag.jsx keyword.operator.assignment"
             ],
             "settings": {
-                "foreground": "#a394e577"
+                "foreground": "#71717a"
             }
         },
         {
@@ -183,7 +193,7 @@
                 "variable.other.property"
             ],
             "settings": {
-                "foreground": "#d3d0f5"
+                "foreground": "#bab3ee"
             }
         },
         {
@@ -191,7 +201,7 @@
                 "constant"
             ],
             "settings": {
-                "foreground": "#a78bfa"
+                "foreground": "#97bbff"
             }
         },
         {
@@ -199,7 +209,7 @@
                 "string"
             ],
             "settings": {
-                "foreground": "#75c692"
+                "foreground": "#6ee7b7"
             }
         },
         {
@@ -207,7 +217,7 @@
                 "punctuation.definition.string"
             ],
             "settings": {
-                "foreground": "#75c692"
+                "foreground": "#6ee7b7"
             }
         },
         {
@@ -381,6 +391,64 @@
             }
         },
         {
+            "name": "CSS Property Values - Function call",
+            "scope": [
+                "source.css meta.property-value meta.function"
+            ],
+            "settings": {
+                "foreground": "#a394e5"
+            }
+        },
+        {
+            "name": "CSS Property Values - Constants",
+            "scope": [
+                "source.css support.constant"
+            ],
+            "settings": {
+                "foreground": "#f1beb0"
+            }
+        },
+        {
+            "name": "CSS Selectors - Entity",
+            "scope": [
+                "source.css entity"
+            ],
+            "settings": {
+                "foreground": "#a78bfa"
+            }
+        },
+        {
+            "name": "CSS Selectors - Attributes (classes, ids, etc.)",
+            "scope": [
+                "source.css entity.other.attribute-name"
+            ],
+            "settings": {
+                "foreground": "#bab3ee",
+                "fontStyle": ""
+            }
+        },
+        {
+            "name": "CSS Selectors - Attributes selector ([type='foo'])",
+            "scope": [
+                "source.css meta.attribute-selector entity.other.attribute-name"
+            ],
+            "settings": {
+                "foreground": "#e79882",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "CSS Selectors - Punctuation in selectors",
+            "scope": [
+                "source.css meta.selector punctuation.definition",
+                "source.css meta.selector keyword"
+            ],
+            "settings": {
+                "foreground": "#d4d4d8",
+                "fontStyle": ""
+            }
+        },
+        {
             "name": "@tailwind",
             "scope": [
                 "meta.at-rule.tailwind",
@@ -408,7 +476,7 @@
                 "source.css meta.at-rule.apply entity"
             ],
             "settings": {
-                "foreground": "#d3d0f5"
+                "foreground": "#bab3ee"
             }
         },
         {
@@ -417,7 +485,7 @@
                 "source.css variable"
             ],
             "settings": {
-                "foreground": "#97bbff"
+                "foreground": "#d4d4d8"
             }
         }
     ]

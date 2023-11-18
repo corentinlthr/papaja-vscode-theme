@@ -1,9 +1,12 @@
 {
-    "name": "papaja-theme",
-    "displayName": "papaja-theme",
-    "description": "",
-    "version": "0.0.1",
+    "name": "papaja-vscode-theme",
+    "displayName": "Papaja VSCode Theme",
+    "description": "Papaja theme for VSCode.",
+    "version": "1.2.0",
+    "publisher": "Papaja AB",
+    "license": "MIT",
     "type": "module",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.64.0"
     },
