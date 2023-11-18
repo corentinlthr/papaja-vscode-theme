@@ -63,6 +63,7 @@ export default function (scheme) {
           "keyword.control.flow",
           "keyword.control.return",
           "punctuation.accessor",
+          "support.type.primitive",
         ],
         settings: {
           foreground: scheme.colors.keyword,
@@ -94,6 +95,13 @@ export default function (scheme) {
         },
       },
       {
+        scope: ["variable.language.super"],
+        settings: {
+          foreground: scheme.colors.keyword,
+          fontStyle: "italic",
+        },
+      },
+      {
         scope: ["punctuation", "punctuation.definition.variable"],
         settings: {
           foreground: scheme.colors.method,
@@ -110,7 +118,7 @@ export default function (scheme) {
           "meta.tag.jsx keyword.operator.assignment",
         ],
         settings: {
-          foreground: `${scheme.colors.punctuation}77`,
+          foreground: `${scheme.colors.punctuation}`,
         },
       },
       {
