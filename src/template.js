@@ -363,6 +363,56 @@ export default function (scheme) {
         },
       },
       {
+        name: "CSS Property Values - Function call",
+        scope: ["source.css meta.property-value meta.function"],
+        settings: {
+          foreground: scheme.colors.method,
+        },
+      },
+      {
+        name: "CSS Property Values - Constants",
+        scope: ["source.css support.constant"],
+        settings: {
+          foreground: scheme.colors.storageModifier,
+        },
+      },
+      {
+        name: "CSS Selectors - Entity",
+        scope: ["source.css entity"],
+        settings: {
+          foreground: scheme.colors.class,
+        },
+      },
+      {
+        name: "CSS Selectors - Attributes (classes, ids, etc.)",
+        scope: ["source.css entity.other.attribute-name"],
+        settings: {
+          foreground: scheme.colors.property,
+          fontStyle: "",
+        },
+      },
+      {
+        name: "CSS Selectors - Attributes selector ([type='foo'])",
+        scope: [
+          "source.css meta.attribute-selector entity.other.attribute-name",
+        ],
+        settings: {
+          foreground: scheme.html.attribute,
+          fontStyle: "italic",
+        },
+      },
+      {
+        name: "CSS Selectors - Punctuation in selectors",
+        scope: [
+          "source.css meta.selector punctuation.definition",
+          "source.css meta.selector keyword",
+        ],
+        settings: {
+          foreground: scheme.colors.variable,
+          fontStyle: "",
+        },
+      },
+      {
         name: "@tailwind",
         scope: [
           "meta.at-rule.tailwind",

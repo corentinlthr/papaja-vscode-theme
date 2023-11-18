@@ -47,7 +47,7 @@ const scheme = {
   colors: {
     class: colors.purple[500],
     comment: colors.gray[600],
-    constant: colors.purple[500],
+    constant: colors.blue[300],
     keyword: colors.red[400],
     keywordControl: colors.orange[200],
     method: colors.purple[400],
@@ -92,7 +92,7 @@ const scheme = {
   css: {
     property: colors.orange[200],
     value: colors.gray[300],
-    variable: colors.blue[300],
+    variable: colors.gray[300],
   },
 };
 
