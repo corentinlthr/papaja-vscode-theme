@@ -2,7 +2,7 @@
     "name": "papaja-vscode-theme",
     "displayName": "Papaja VSCode Theme",
     "description": "Papaja theme for VSCode.",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "publisher": "Papaja AB",
     "license": "MIT",
     "type": "module",

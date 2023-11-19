@@ -4,7 +4,7 @@
     "semanticHighlighting": false,
     "colors": {
         "editor.background": "#18181b",
-        "editor.foreground": "#d4d4d8",
+        "editor.foreground": "#e4e4e7",
         "editorLineNumber.activeForeground": "#3f3f46",
         "editorLineNumber.foreground": "#09090b00",
         "editorGutter.addedBackground": "#4ade8033",
@@ -19,10 +19,20 @@
         "panel.background": "#09090b",
         "quickInput.background": "#27272a",
         "sideBar.background": "#09090b",
-        "sideBar.border": "#3f3f46",
+        "sideBar.border": "#27272a",
         "sideBar.foreground": "#6b7280",
         "sideBarTitle.foreground": "#bbbbbb",
-        "terminal.background": "#09090b"
+        "terminal.background": "#09090b",
+        "activityBar.background": "#09090b",
+        "activityBar.border": "#27272a",
+        "activityBar.activeBorder": "#fff8c2",
+        "activityBar.foreground": "#fff8c2",
+        "activityBarBadge.background": "#fff8c2",
+        "activityBarBadge.foreground": "#000000",
+        "focusBorder": "#00000000",
+        "statusBar.background": "#a78bfa33",
+        "titleBar.activeBackground": "#09090b",
+        "titleBar.border": "#27272a"
     },
     "tokenColors": [
         {
@@ -61,7 +71,7 @@
                 "support.type.primitive"
             ],
             "settings": {
-                "foreground": "#e79882"
+                "foreground": "#ffb571"
             }
         },
         {
@@ -69,7 +79,7 @@
                 "keyword.control"
             ],
             "settings": {
-                "foreground": "#f5da93"
+                "foreground": "#fff8c2"
             }
         },
         {
@@ -77,7 +87,7 @@
                 "storage.modifier"
             ],
             "settings": {
-                "foreground": "#f1beb0"
+                "foreground": "#ffd4a8"
             }
         },
         {
@@ -85,13 +95,13 @@
                 "variable"
             ],
             "settings": {
-                "foreground": "#d4d4d8"
+                "foreground": "#e4e4e7"
             }
         },
         {
             "scope": [
                 "variable.language.this",
-                "variable.language.this"
+                "variable.language.this punctuation.definition.variable"
             ],
             "settings": {
                 "foreground": "#a394e5",
@@ -103,7 +113,7 @@
                 "variable.language.super"
             ],
             "settings": {
-                "foreground": "#e79882",
+                "foreground": "#ffb571",
                 "fontStyle": "italic"
             }
         },
@@ -193,7 +203,7 @@
                 "variable.other.property"
             ],
             "settings": {
-                "foreground": "#bab3ee"
+                "foreground": "#e0d6fe"
             }
         },
         {
@@ -209,7 +219,7 @@
                 "string"
             ],
             "settings": {
-                "foreground": "#6ee7b7"
+                "foreground": "#86efac"
             }
         },
         {
@@ -217,7 +227,7 @@
                 "punctuation.definition.string"
             ],
             "settings": {
-                "foreground": "#6ee7b7"
+                "foreground": "#86efac"
             }
         },
         {
@@ -254,7 +264,7 @@
                 "meta.namespace punctuation.separator"
             ],
             "settings": {
-                "foreground": "#f5da93"
+                "foreground": "#fff8c2"
             }
         },
         {
@@ -263,7 +273,7 @@
                 "meta.function-call.php entity.name.variable.parameter"
             ],
             "settings": {
-                "foreground": "#a394e566"
+                "foreground": "#a394e588"
             }
         },
         {
@@ -308,7 +318,7 @@
                 "entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#e79882"
+                "foreground": "#ffd4a8"
             }
         },
         {
@@ -328,7 +338,7 @@
                 "punctuation.section.embedded.end.php"
             ],
             "settings": {
-                "foreground": "#f5da93"
+                "foreground": "#ffed89"
             }
         },
         {
@@ -378,7 +388,7 @@
                 "source.css meta.property-name"
             ],
             "settings": {
-                "foreground": "#f5da93"
+                "foreground": "#ffed89"
             }
         },
         {
@@ -405,7 +415,7 @@
                 "source.css support.constant"
             ],
             "settings": {
-                "foreground": "#f1beb0"
+                "foreground": "#ffd4a8"
             }
         },
         {
@@ -423,7 +433,7 @@
                 "source.css entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#bab3ee",
+                "foreground": "#e0d6fe",
                 "fontStyle": ""
             }
         },
@@ -433,7 +443,7 @@
                 "source.css meta.attribute-selector entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#e79882",
+                "foreground": "#ffd4a8",
                 "fontStyle": "italic"
             }
         },
@@ -444,7 +454,7 @@
                 "source.css meta.selector keyword"
             ],
             "settings": {
-                "foreground": "#d4d4d8",
+                "foreground": "#e4e4e7",
                 "fontStyle": ""
             }
         },
@@ -457,7 +467,7 @@
                 "meta.at-rule.tailwind variable"
             ],
             "settings": {
-                "foreground": "#e79882"
+                "foreground": "#ffb571"
             }
         },
         {
@@ -467,7 +477,7 @@
                 "source.css keyword.control.at-rule punctuation.definition"
             ],
             "settings": {
-                "foreground": "#e79882"
+                "foreground": "#ffb571"
             }
         },
         {
@@ -476,7 +486,7 @@
                 "source.css meta.at-rule.apply entity"
             ],
             "settings": {
-                "foreground": "#bab3ee"
+                "foreground": "#e0d6fe"
             }
         },
         {
