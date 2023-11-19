@@ -252,7 +252,7 @@ export default function (scheme) {
         name: "Named arguments foo(bar: 1)",
         scope: ["meta.function-call.php entity.name.variable.parameter"],
         settings: {
-          foreground: `${scheme.colors.method}66`,
+          foreground: `${scheme.colors.method}88`,
         },
       },
 
