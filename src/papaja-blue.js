@@ -38,6 +38,7 @@ const scheme = {
     string: colors.green,
     stringQuote: colors.green,
     variable: colors.gray[300],
+    this: colors.blue[400],
   },
   activityBar: {
     activeBorder: colors.blue[400],

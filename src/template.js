@@ -100,9 +100,12 @@ export default function (scheme) {
         },
       },
       {
-        scope: ["variable.language.this", "variable.language.this"],
+        scope: [
+          "variable.language.this",
+          "variable.language.this punctuation.definition.variable",
+        ],
         settings: {
-          foreground: scheme.colors.method,
+          foreground: scheme.colors.this,
           fontStyle: "italic",
         },
       },
