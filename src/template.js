@@ -24,10 +24,22 @@ export default function (scheme) {
       "panel.background": scheme.panel.background,
       "quickInput.background": scheme.list.background,
       "sideBar.background": scheme.panel.background,
-      "sideBar.border": "#3f3f46",
+      "sideBar.border": scheme.editor.borders,
       "sideBar.foreground": "#6b7280",
       "sideBarTitle.foreground": "#bbbbbb",
       "terminal.background": scheme.panel.background,
+
+      "activityBar.background": scheme.panel.background,
+      "activityBar.border": scheme.editor.borders,
+      "activityBar.activeBorder": scheme.activityBar.activeBorder,
+      "activityBar.foreground": scheme.activityBar.foreground,
+      "activityBarBadge.background": scheme.activityBar.badge,
+      "activityBarBadge.foreground": "#000000",
+      focusBorder: "#00000000",
+
+      "statusBar.background": scheme.statusBar.background,
+      "titleBar.activeBackground": scheme.panel.background,
+      "titleBar.border": scheme.editor.borders,
     },
     tokenColors: [
       // Comments and documentation

@@ -39,13 +39,22 @@ const scheme = {
     stringQuote: colors.green,
     variable: colors.gray[300],
   },
+  activityBar: {
+    activeBorder: colors.blue[400],
+    foreground: colors.gray[300],
+    badge: colors.blue[400],
+  },
   editor: {
     background: colors.gray[900],
     foreground: colors.gray[300],
+    borders: colors.gray[800],
     lineNumbers: {
       all: colors.gray[900],
       active: colors.gray[700],
     },
+  },
+  statusBar: {
+    background: `${colors.blue[400]}33`,
   },
   panel: {
     background: colors.gray[950],
