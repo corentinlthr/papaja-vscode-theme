@@ -68,6 +68,7 @@
                 "keyword.control.flow",
                 "keyword.control.return",
                 "punctuation.accessor",
+                "punctuation.definition.arrow",
                 "support.type.primitive"
             ],
             "settings": {
@@ -137,7 +138,7 @@
                 "meta.tag.jsx keyword.operator.assignment"
             ],
             "settings": {
-                "foreground": "#71717a"
+                "foreground": "#a1a1aa"
             }
         },
         {
@@ -208,7 +209,8 @@
         },
         {
             "scope": [
-                "constant"
+                "constant",
+                "constant punctuation.separator"
             ],
             "settings": {
                 "foreground": "#97bbff"
@@ -264,7 +266,7 @@
                 "meta.namespace punctuation.separator"
             ],
             "settings": {
-                "foreground": "#fff8c2"
+                "foreground": "#ffd4a8"
             }
         },
         {
@@ -274,6 +276,24 @@
             ],
             "settings": {
                 "foreground": "#a394e588"
+            }
+        },
+        {
+            "name": "PHP Attributes #[Route]",
+            "scope": [
+                "meta.attribute.php"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "PHP Attributes name #[$foo]",
+            "scope": [
+                "meta.attribute.php support.attribute"
+            ],
+            "settings": {
+                "foreground": "#a78bfa"
             }
         },
         {
@@ -338,7 +358,17 @@
                 "punctuation.section.embedded.end.php"
             ],
             "settings": {
-                "foreground": "#ffed89"
+                "foreground": "#ffb571"
+            }
+        },
+        {
+            "name": "Parenthesis in Blade instructions @foo()",
+            "scope": [
+                "text.html.php.blade begin.bracket.round",
+                "text.html.php.blade end.bracket.round"
+            ],
+            "settings": {
+                "foreground": "#a1a1aa"
             }
         },
         {
@@ -367,7 +397,7 @@
                 "source.json punctuation.separator"
             ],
             "settings": {
-                "foreground": "#71717a"
+                "foreground": "#a1a1aa"
             }
         },
         {
