@@ -75,6 +75,7 @@ export default function (scheme) {
           "keyword.control.flow",
           "keyword.control.return",
           "punctuation.accessor",
+          "punctuation.definition.arrow",
           "support.type.primitive",
         ],
         settings: {
@@ -193,7 +194,7 @@ export default function (scheme) {
         },
       },
       {
-        scope: ["constant"],
+        scope: ["constant", "constant punctuation.separator"],
         settings: {
           foreground: scheme.colors.constant,
         },
@@ -245,7 +246,7 @@ export default function (scheme) {
           "meta.namespace punctuation.separator",
         ],
         settings: {
-          foreground: scheme.colors.keywordControl,
+          foreground: scheme.colors.storageModifier,
         },
       },
       {
