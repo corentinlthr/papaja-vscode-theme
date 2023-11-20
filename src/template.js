@@ -314,6 +314,16 @@ export default function (scheme) {
           foreground: scheme.html.blade,
         },
       },
+      {
+        name: "Parenthesis in Blade instructions @foo()",
+        scope: [
+          "text.html.php.blade begin.bracket.round",
+          "text.html.php.blade end.bracket.round",
+        ],
+        settings: {
+          foreground: scheme.colors.punctuation,
+        },
+      },
 
       /**
        * ----------------------------------------
