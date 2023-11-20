@@ -255,6 +255,20 @@ export default function (scheme) {
           foreground: `${scheme.colors.method}88`,
         },
       },
+      {
+        name: "PHP Attributes #[Route]",
+        scope: ["meta.attribute.php"],
+        settings: {
+          fontStyle: "italic",
+        },
+      },
+      {
+        name: "PHP Attributes name #[$foo]",
+        scope: ["meta.attribute.php support.attribute"],
+        settings: {
+          foreground: scheme.colors.class,
+        },
+      },
 
       /**
        * ----------------------------------------
