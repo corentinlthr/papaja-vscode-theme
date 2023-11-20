@@ -19,12 +19,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "Papaja Blue",
-                "uiTheme": "vs-dark",
-                "path": "./themes/Papaja-Blue.json"
-            },
-            {
-                "label": "Papaja Purple",
+                "label": "Papaja Theme",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Papaja-Purple.json"
             }

@@ -6,8 +6,8 @@ import fs from "fs";
 
 let file = null;
 
-file = JSON.stringify(template(papajaBlue), null, 4);
-fs.writeFileSync("themes/Papaja-Blue.json", file);
+// file = JSON.stringify(template(papajaBlue), null, 4);
+// fs.writeFileSync("themes/Papaja-Blue.json", file);
 
 file = JSON.stringify(template(papajaPurple), null, 4);
 fs.writeFileSync("themes/Papaja-Purple.json", file);
