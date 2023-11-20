@@ -56,7 +56,7 @@ const scheme = {
     keywordControl: colors.yellow[100],
     method: colors.purple[400],
     property: colors.purple[200],
-    punctuation: colors.gray[500],
+    punctuation: colors.gray[400],
     storageModifier: colors.orange[200],
     string: colors.green[300],
     stringQuote: colors.green[300],
