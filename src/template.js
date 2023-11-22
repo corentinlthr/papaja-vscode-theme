@@ -2,7 +2,6 @@ export default function (scheme) {
   return {
     name: scheme.name,
     type: scheme.type,
-    semanticHighlighting: false,
     colors: {
       "editor.background": scheme.editor.background,
       "editor.foreground": scheme.editor.foreground,
@@ -88,6 +87,13 @@ export default function (scheme) {
           foreground: scheme.colors.keywordControl,
         },
       },
+      //   Italic on public function
+      //   {
+      //     scope: ["storage.type.function", "storage.modifier"],
+      //     settings: {
+      //       fontStyle: "italic",
+      //     },
+      //   },
       {
         scope: ["storage.modifier"],
         settings: {
@@ -134,7 +140,7 @@ export default function (scheme) {
           "meta.tag.jsx keyword.operator.assignment",
         ],
         settings: {
-          foreground: `${scheme.colors.punctuation}`,
+          foreground: scheme.colors.punctuation,
         },
       },
       {
@@ -233,6 +239,7 @@ export default function (scheme) {
           foreground: scheme.php.use,
         },
       },
+      // Blade {{ $foo }}
       {
         scope: ["support.function.construct"],
         settings: {
@@ -489,5 +496,12 @@ export default function (scheme) {
         },
       },
     ],
+    semanticHighlighting: false,
+    // semanticTokenColors: {
+    //   "method.defaultLibrary": {
+    //     foreground: scheme.colors.method,
+    //     fontStyle: "underline",
+    //   },
+    // },
   };
 }
