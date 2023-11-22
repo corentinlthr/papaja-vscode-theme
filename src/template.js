@@ -59,6 +59,7 @@ export default function (scheme) {
           "comment.block.documentation variable",
           "comment.block.documentation entity",
           "comment.block.documentation support.class",
+          "comment.block.documentation entity.name.type",
         ],
         settings: {
           foreground: scheme.colors.comment,
@@ -159,7 +160,7 @@ export default function (scheme) {
         scope: [
           "meta.class entity.name",
           "meta.class entity.other.inherited-class",
-          "entity.name.type.class",
+          "entity.name.type",
         ],
         settings: {
           foreground: scheme.colors.class,
@@ -167,6 +168,7 @@ export default function (scheme) {
       },
       {
         scope: [
+          "meta.class entity.name.function",
           "meta.class meta.definition.method",
           "meta.class meta.function entity.name",
           "meta.class meta.function support.function",
@@ -200,7 +202,11 @@ export default function (scheme) {
         },
       },
       {
-        scope: ["constant", "constant punctuation.separator"],
+        scope: [
+          "constant.language",
+          "constant.numeric",
+          "constant punctuation.separator",
+        ],
         settings: {
           foreground: scheme.colors.constant,
         },
