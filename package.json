@@ -18,6 +18,7 @@
         "Themes"
     ],
     "scripts": {
+        "start": "nodemon --watch src --exec \"npm run build\"",
         "build": "node ./src/build.js"
     },
     "contributes": {
@@ -28,5 +29,8 @@
                 "path": "./themes/Papaja-Purple.json"
             }
         ]
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
     }
 }
