@@ -1,7 +1,6 @@
 {
     "name": "Purple",
     "type": "dark",
-    "semanticHighlighting": false,
     "colors": {
         "editor.background": "#18181b",
         "editor.foreground": "#e4e4e7",
@@ -54,7 +53,8 @@
                 "comment.block.documentation punctuation.separator",
                 "comment.block.documentation variable",
                 "comment.block.documentation entity",
-                "comment.block.documentation support.class"
+                "comment.block.documentation support.class",
+                "comment.block.documentation entity.name.type"
             ],
             "settings": {
                 "foreground": "#52525b",
@@ -163,7 +163,7 @@
             "scope": [
                 "meta.class entity.name",
                 "meta.class entity.other.inherited-class",
-                "entity.name.type.class"
+                "entity.name.type"
             ],
             "settings": {
                 "foreground": "#a78bfa"
@@ -171,13 +171,13 @@
         },
         {
             "scope": [
+                "meta.class entity.name.function",
                 "meta.class meta.definition.method",
                 "meta.class meta.function entity.name",
                 "meta.class meta.function support.function"
             ],
             "settings": {
-                "foreground": "#a394e5",
-                "fontStyle": "bold"
+                "foreground": "#a394e5"
             }
         },
         {
@@ -209,7 +209,8 @@
         },
         {
             "scope": [
-                "constant",
+                "constant.language",
+                "constant.numeric",
                 "constant punctuation.separator"
             ],
             "settings": {
@@ -235,6 +236,7 @@
         {
             "scope": [
                 "meta.use",
+                "meta.import",
                 "meta.namespace",
                 "meta.function.closure storage.type"
             ],
@@ -262,7 +264,7 @@
         {
             "scope": [
                 "meta.namespace keyword",
-                "meta.namespace entity.name",
+                "meta.namespace entity.name.type",
                 "meta.namespace punctuation.separator"
             ],
             "settings": {
@@ -413,6 +415,16 @@
             }
         },
         {
+            "scope": [
+                "meta.import keyword.control",
+                "meta.export keyword.control"
+            ],
+            "settings": {
+                "foreground": "#ffb571",
+                "fontStyle": "italic"
+            }
+        },
+        {
             "name": "CSS Property Names",
             "scope": [
                 "source.css meta.property-name"
@@ -528,5 +540,6 @@
                 "foreground": "#d4d4d8"
             }
         }
-    ]
+    ],
+    "semanticHighlighting": false
 }

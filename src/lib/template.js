@@ -175,7 +175,6 @@ export default function (scheme) {
         ],
         settings: {
           foreground: scheme.colors.method,
-          fontStyle: "bold",
         },
       },
       {
@@ -232,6 +231,7 @@ export default function (scheme) {
       {
         scope: [
           "meta.use",
+          "meta.import",
           "meta.namespace",
           "meta.function.closure storage.type",
         ],
@@ -255,7 +255,7 @@ export default function (scheme) {
       {
         scope: [
           "meta.namespace keyword",
-          "meta.namespace entity.name",
+          "meta.namespace entity.name.type",
           "meta.namespace punctuation.separator",
         ],
         settings: {
@@ -393,6 +393,13 @@ export default function (scheme) {
         ],
         settings: {
           foreground: scheme.colors.class,
+        },
+      },
+      {
+        scope: ["meta.import keyword.control", "meta.export keyword.control"],
+        settings: {
+          foreground: scheme.colors.keyword,
+          fontStyle: "italic",
         },
       },
 

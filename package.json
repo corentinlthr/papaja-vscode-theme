@@ -26,7 +26,7 @@
             {
                 "label": "Papaja Theme",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Papaja-Purple.json"
+                "path": "./build/papaja-dark.json"
             }
         ]
     },
