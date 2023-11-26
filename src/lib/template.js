@@ -204,6 +204,7 @@ export default function (scheme) {
         scope: [
           "constant.language",
           "constant.numeric",
+          "constant.numeric keyword.other.unit",
           "constant punctuation.separator",
         ],
         settings: {
@@ -319,12 +320,6 @@ export default function (scheme) {
         scope: ["entity.other.attribute-name"],
         settings: {
           foreground: scheme.html.attribute,
-        },
-      },
-      {
-        name: "Attribute names",
-        scope: ["entity.other.attribute-name"],
-        settings: {
           fontStyle: "italic",
         },
       },
@@ -402,14 +397,21 @@ export default function (scheme) {
 
       /**
        * ----------------------------------------
-       * Language-specific Tokens: CSS
+       * Language-specific Tokens: CSS/SCSS
        * ----------------------------------------
        */
       {
-        name: "CSS Property Names",
-        scope: ["source.css meta.property-name"],
+        name: "CSS Property Names - 'foo': bar",
+        scope: ["source.css meta.property-name support.type.property-name"],
         settings: {
           foreground: scheme.css.property,
+        },
+      },
+      {
+        name: "CSS attributes - ",
+        scope: ["source.css entity.other.attribute-name"],
+        settings: {
+          foreground: scheme.css.attribute,
         },
       },
       {
@@ -420,58 +422,21 @@ export default function (scheme) {
         },
       },
       {
-        name: "CSS Property Values - Function call",
-        scope: ["source.css meta.property-value meta.function"],
-        settings: {
-          foreground: scheme.colors.method,
-        },
-      },
-      {
-        name: "CSS Property Values - Constants",
-        scope: ["source.css support.constant"],
-        settings: {
-          foreground: scheme.colors.storageModifier,
-        },
-      },
-      {
-        name: "CSS Selectors - Entity",
-        scope: ["source.css entity"],
-        settings: {
-          foreground: scheme.colors.class,
-        },
-      },
-      {
-        name: "CSS Selectors - Attributes (classes, ids, etc.)",
-        scope: ["source.css entity.other.attribute-name"],
-        settings: {
-          foreground: scheme.colors.property,
-          fontStyle: "",
-        },
-      },
-      {
-        name: "CSS Selectors - Attributes selector ([type='foo'])",
+        name: "CSS Property Values: Constant colors",
         scope: [
-          "source.css meta.attribute-selector entity.other.attribute-name",
+          "source.css constant.other.color",
+          "source.css constant.other.color punctuation.definition",
         ],
         settings: {
-          foreground: scheme.html.attribute,
-          fontStyle: "italic",
+          foreground: scheme.colors.constant,
         },
       },
       {
-        name: "CSS Selectors - Punctuation in selectors",
+        name: "CSS Property Values - Function call and @at rules",
         scope: [
-          "source.css meta.selector punctuation.definition",
-          "source.css meta.selector keyword",
-        ],
-        settings: {
-          foreground: scheme.colors.variable,
-          fontStyle: "",
-        },
-      },
-      {
-        name: "@tailwind",
-        scope: [
+          "source.css support.function",
+          "source.css keyword.control.at-rule",
+          "source.css keyword.control.at-rule punctuation.definition",
           "meta.at-rule.tailwind",
           "meta.at-rule.tailwind punctuation.definition",
           "meta.at-rule.tailwind keyword.control",
@@ -482,20 +447,32 @@ export default function (scheme) {
         },
       },
       {
-        name: "@apply @layer",
-        scope: [
-          "source.css keyword.control.at-rule",
-          "source.css keyword.control.at-rule punctuation.definition",
-        ],
+        name: "CSS Property Values - Constants",
+        scope: ["source.css support.constant"],
         settings: {
-          foreground: scheme.colors.keyword,
+          foreground: scheme.colors.keywordControl,
+        },
+      },
+      {
+        name: "CSS Selectors - Entity",
+        scope: ["source.css entity"],
+        settings: {
+          foreground: scheme.colors.class,
+        },
+      },
+      {
+        name: "CSS Selectors - Entity",
+        scope: ["source.css entity.name.tag"],
+        settings: {
+          foreground: scheme.css.tag,
         },
       },
       {
         name: "@apply content",
-        scope: ["source.css meta.at-rule.apply entity"],
+        scope: ["source.css meta.at-rule.apply entity.other.attribute-name"],
         settings: {
-          foreground: scheme.colors.property,
+          foreground: scheme.colors.class,
+          fontStyle: "",
         },
       },
       {
@@ -503,6 +480,14 @@ export default function (scheme) {
         scope: ["source.css variable"],
         settings: {
           foreground: scheme.css.variable,
+          fontStyle: "italic",
+        },
+      },
+      {
+        name: "CSS Variables",
+        scope: ["source.css comment"],
+        settings: {
+          fontStyle: "italic",
         },
       },
     ],

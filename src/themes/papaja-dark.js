@@ -63,9 +63,12 @@ const scheme = {
     objectKey: colors.purple[300],
   },
   css: {
-    property: colors.yellow[200],
+    attribute: colors.orange[200],
+    property: colors.purple[300],
     value: colors.gray[300],
     variable: colors.gray[300],
+    tag: colors.orange[400],
+  },
   },
 };
 
