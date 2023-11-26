@@ -5,7 +5,7 @@ const scheme = {
   type: "dark",
   colors: {
     // class: colors.blue[300],
-    class: colors.purple[500],
+    class: colors.purple[400],
     comment: colors.gray[600],
     // constant: colors.yellow[100],
     constant: colors.blue[300],
