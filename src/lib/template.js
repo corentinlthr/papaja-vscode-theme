@@ -271,16 +271,13 @@ export default function (scheme) {
       },
       {
         name: "PHP Attributes #[Route]",
-        scope: ["meta.attribute.php"],
+        scope: [
+          "meta.attribute.php",
+          "meta.attribute.php punctuation.definition",
+          "meta.attribute.php support.attribute",
+        ],
         settings: {
-          fontStyle: "italic",
-        },
-      },
-      {
-        name: "PHP Attributes name #[$foo]",
-        scope: ["meta.attribute.php support.attribute"],
-        settings: {
-          foreground: scheme.colors.class,
+          foreground: scheme.php.attribute,
         },
       },
 
