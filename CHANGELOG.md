@@ -1,9 +1,13 @@
 # Change Log
 
-All notable changes to the "papaja-theme" extension will be documented in this file.
+### `1.2.3` (2023-11-26)
+- Improved selectors for documentation blocks
+- Improved selectors for functions in JS
+- Improved selectors on imports/exports
+- Adds better support for PHP 8 attributes
+- Fixed mixed colors in PHP namespaces
+- Fixed constant colors being applied before token match
+- Fixed too saturated class color
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
+### `1.2.2` (2023-11-20)
 - Initial release

@@ -2,7 +2,7 @@
     "name": "papaja-vscode-theme",
     "displayName": "Papaja Theme",
     "description": "Papaja theme for VSCode.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "publisher": "corentinlthr",
     "repository": {
         "type": "git",
