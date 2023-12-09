@@ -48,7 +48,7 @@ const scheme = {
   },
   php: {
     use: `${colors.purple[400]}55`,
-    attribute: `${colors.orange[200]}`,
+    attribute: `${colors.yellow[100]}`,
   },
   html: {
     tag: colors.purple[400],
