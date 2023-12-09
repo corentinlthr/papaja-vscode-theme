@@ -67,6 +67,9 @@ const scheme = {
     variable: colors.gray[300],
     tag: colors.orange[400],
   },
+  dart: {
+    function: colors["yellow"][100],
+  },
   },
 };
 

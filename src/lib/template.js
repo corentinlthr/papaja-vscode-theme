@@ -505,6 +505,32 @@ export default function (scheme) {
           fontStyle: "italic",
         },
       },
+      /**
+       * ----------------------------------------
+       * Language-specific Dart / Flutter
+       * ----------------------------------------
+       */
+      {
+        name: "Functions",
+        scope: ["source.dart entity.name.function"],
+        settings: {
+          foreground: scheme.dart.function,
+        },
+      },
+      {
+        name: "Keywords and punctuation",
+        scope: ["source.dart keyword.control", "source.dart punctuation.dot"],
+        settings: {
+          foreground: scheme.colors.keyword,
+        },
+      },
+      {
+        name: "Keywords and punctuation",
+        scope: ["source.dart keyword.declaration"],
+        settings: {
+          foreground: scheme.colors.keyword,
+        },
+      },
     ],
     semanticHighlighting: false,
     // semanticTokenColors: {
