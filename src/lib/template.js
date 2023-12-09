@@ -533,6 +533,24 @@ export default function (scheme) {
       },
       /**
        * ----------------------------------------
+       * Language-specific C
+       * ----------------------------------------
+       */
+      {
+        name: "Imports",
+        scope: [
+          "source.c meta.preprocessor",
+          "source.c meta.preprocessor keyword.control",
+          "source.c meta.preprocessor punctuation.definition",
+          "source.python keyword.control.import",
+        ],
+        settings: {
+          foreground: scheme.colors.keyword,
+          fontStyle: "italic",
+        },
+      },
+      /**
+       * ----------------------------------------
        * Language-specific Python
        * ----------------------------------------
        */
