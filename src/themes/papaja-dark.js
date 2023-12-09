@@ -52,8 +52,9 @@ const scheme = {
   },
   html: {
     tag: colors.purple[400],
+    customTag: colors.purple[400],
+    livewire: colors.purple[400],
     attribute: colors.orange[200],
-    component: colors.purple[400],
     blade: colors.orange[300],
   },
   json: {

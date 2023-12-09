@@ -305,14 +305,28 @@ export default function (scheme) {
         name: "Custom Tags: <x-foo>",
         scope: ["text.html meta.tag.custom entity.name.tag"],
         settings: {
-          foreground: scheme.html.component,
+          foreground: scheme.html.customTag,
         },
       },
       {
         name: "Custom Tags: <x-foo>",
         scope: ["text.html meta.tag.custom punctuation.definition.tag"],
         settings: {
-          foreground: `${scheme.html.component}55`,
+          foreground: `${scheme.html.customTag}55`,
+        },
+      },
+      {
+        name: "<livewire:foo />",
+        scope: ["text.html meta.tag.other entity.name.tag"],
+        settings: {
+          foreground: scheme.html.livewire,
+        },
+      },
+      {
+        name: "Custom Tags: <x-foo>",
+        scope: ["text.html meta.tag.other punctuation.definition.tag"],
+        settings: {
+          foreground: `${scheme.html.livewire}55`,
         },
       },
       {
