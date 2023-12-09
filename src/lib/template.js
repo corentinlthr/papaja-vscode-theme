@@ -531,6 +531,18 @@ export default function (scheme) {
           foreground: scheme.colors.keyword,
         },
       },
+      /**
+       * ----------------------------------------
+       * Language-specific Python
+       * ----------------------------------------
+       */
+      {
+        name: "Arguments in function",
+        scope: ["source.python meta.function-call.arguments"],
+        settings: {
+          foreground: scheme.colors.variable,
+        },
+      },
     ],
     semanticHighlighting: false,
     // semanticTokenColors: {

@@ -70,6 +70,8 @@ const scheme = {
   dart: {
     function: colors["yellow"][100],
   },
+  python: {
+    builtIn: colors["yellow"][100],
   },
 };
 
