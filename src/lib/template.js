@@ -161,6 +161,7 @@ export default function (scheme) {
           "meta.class entity.name",
           "meta.class entity.other.inherited-class",
           "entity.name.type",
+          "support.type",
         ],
         settings: {
           foreground: scheme.colors.class,
@@ -168,10 +169,10 @@ export default function (scheme) {
       },
       {
         scope: [
-          "meta.class entity.name.function",
+          "support.function",
+          "entity.name.function",
           "meta.class meta.definition.method",
           "meta.class meta.function entity.name",
-          "meta.class meta.function support.function",
         ],
         settings: {
           foreground: scheme.colors.method,
@@ -195,7 +196,7 @@ export default function (scheme) {
         },
       },
       {
-        scope: ["variable.other.property"],
+        scope: ["variable.other.property", "support.variable.property"],
         settings: {
           foreground: scheme.colors.property,
         },
