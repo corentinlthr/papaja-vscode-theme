@@ -1,5 +1,11 @@
 # Change Log
 
+### `1.2.4` (2023-12-09)
+- CSS: Improved colours
+- PHP: Improved attributes
+- Improved global keywords and methods selectors
+- Improved support for Python, Dart and C.
+
 ### `1.2.3` (2023-11-26)
 - Improved selectors for documentation blocks
 - Improved selectors for functions in JS

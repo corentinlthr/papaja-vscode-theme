@@ -24,9 +24,9 @@
         "terminal.background": "#09090b",
         "activityBar.background": "#09090b",
         "activityBar.border": "#27272a",
-        "activityBar.activeBorder": "#fff8c2",
-        "activityBar.foreground": "#fff8c2",
-        "activityBarBadge.background": "#fff8c2",
+        "activityBar.activeBorder": "#fffac2",
+        "activityBar.foreground": "#fffac2",
+        "activityBarBadge.background": "#fffac2",
         "activityBarBadge.foreground": "#000000",
         "focusBorder": "#00000000",
         "statusBar.background": "#a78bfa33",
@@ -80,7 +80,7 @@
                 "keyword.control"
             ],
             "settings": {
-                "foreground": "#fff8c2"
+                "foreground": "#fff387"
             }
         },
         {
@@ -163,7 +163,8 @@
             "scope": [
                 "meta.class entity.name",
                 "meta.class entity.other.inherited-class",
-                "entity.name.type"
+                "entity.name.type",
+                "support.type"
             ],
             "settings": {
                 "foreground": "#a394e5"
@@ -171,10 +172,10 @@
         },
         {
             "scope": [
-                "meta.class entity.name.function",
+                "support.function",
+                "entity.name.function",
                 "meta.class meta.definition.method",
-                "meta.class meta.function entity.name",
-                "meta.class meta.function support.function"
+                "meta.class meta.function entity.name"
             ],
             "settings": {
                 "foreground": "#a394e5"
@@ -201,7 +202,8 @@
         },
         {
             "scope": [
-                "variable.other.property"
+                "variable.other.property",
+                "support.variable.property"
             ],
             "settings": {
                 "foreground": "#e0d6fe"
@@ -211,10 +213,11 @@
             "scope": [
                 "constant.language",
                 "constant.numeric",
+                "constant.numeric keyword.other.unit",
                 "constant punctuation.separator"
             ],
             "settings": {
-                "foreground": "#97bbff"
+                "foreground": "#ffb3ba"
             }
         },
         {
@@ -222,7 +225,7 @@
                 "string"
             ],
             "settings": {
-                "foreground": "#86efac"
+                "foreground": "#8af09e"
             }
         },
         {
@@ -230,7 +233,7 @@
                 "punctuation.definition.string"
             ],
             "settings": {
-                "foreground": "#86efac"
+                "foreground": "#8af09e"
             }
         },
         {
@@ -288,7 +291,7 @@
                 "meta.attribute.php support.attribute"
             ],
             "settings": {
-                "foreground": "#ffd4a8"
+                "foreground": "#fffac2"
             }
         },
         {
@@ -328,20 +331,30 @@
             }
         },
         {
+            "name": "<livewire:foo />",
+            "scope": [
+                "text.html meta.tag.other entity.name.tag"
+            ],
+            "settings": {
+                "foreground": "#a394e5"
+            }
+        },
+        {
+            "name": "Custom Tags: <x-foo>",
+            "scope": [
+                "text.html meta.tag.other punctuation.definition.tag"
+            ],
+            "settings": {
+                "foreground": "#a394e555"
+            }
+        },
+        {
             "name": "Attributes",
             "scope": [
                 "entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#ffd4a8"
-            }
-        },
-        {
-            "name": "Attribute names",
-            "scope": [
-                "entity.other.attribute-name"
-            ],
-            "settings": {
+                "foreground": "#ffd4a8",
                 "fontStyle": "italic"
             }
         },
@@ -418,12 +431,21 @@
             }
         },
         {
-            "name": "CSS Property Names",
+            "name": "CSS Property Names - 'foo': bar",
             "scope": [
-                "source.css meta.property-name"
+                "source.css meta.property-name support.type.property-name"
             ],
             "settings": {
-                "foreground": "#ffed89"
+                "foreground": "#bab3ee"
+            }
+        },
+        {
+            "name": "CSS attributes - ",
+            "scope": [
+                "source.css entity.other.attribute-name"
+            ],
+            "settings": {
+                "foreground": "#ffd4a8"
             }
         },
         {
@@ -436,12 +458,28 @@
             }
         },
         {
-            "name": "CSS Property Values - Function call",
+            "name": "CSS Property Values: Constant colors",
             "scope": [
-                "source.css meta.property-value meta.function"
+                "source.css constant.other.color",
+                "source.css constant.other.color punctuation.definition"
             ],
             "settings": {
-                "foreground": "#a394e5"
+                "foreground": "#ffb3ba"
+            }
+        },
+        {
+            "name": "CSS Property Values - Function call and @at rules",
+            "scope": [
+                "source.css support.function",
+                "source.css keyword.control.at-rule",
+                "source.css keyword.control.at-rule punctuation.definition",
+                "meta.at-rule.tailwind",
+                "meta.at-rule.tailwind punctuation.definition",
+                "meta.at-rule.tailwind keyword.control",
+                "meta.at-rule.tailwind variable"
+            ],
+            "settings": {
+                "foreground": "#ffb571"
             }
         },
         {
@@ -450,7 +488,7 @@
                 "source.css support.constant"
             ],
             "settings": {
-                "foreground": "#ffd4a8"
+                "foreground": "#fff387"
             }
         },
         {
@@ -463,65 +501,22 @@
             }
         },
         {
-            "name": "CSS Selectors - Attributes (classes, ids, etc.)",
+            "name": "CSS Selectors - Entity",
             "scope": [
-                "source.css entity.other.attribute-name"
+                "source.css entity.name.tag"
             ],
             "settings": {
-                "foreground": "#e0d6fe",
-                "fontStyle": ""
-            }
-        },
-        {
-            "name": "CSS Selectors - Attributes selector ([type='foo'])",
-            "scope": [
-                "source.css meta.attribute-selector entity.other.attribute-name"
-            ],
-            "settings": {
-                "foreground": "#ffd4a8",
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "name": "CSS Selectors - Punctuation in selectors",
-            "scope": [
-                "source.css meta.selector punctuation.definition",
-                "source.css meta.selector keyword"
-            ],
-            "settings": {
-                "foreground": "#e4e4e7",
-                "fontStyle": ""
-            }
-        },
-        {
-            "name": "@tailwind",
-            "scope": [
-                "meta.at-rule.tailwind",
-                "meta.at-rule.tailwind punctuation.definition",
-                "meta.at-rule.tailwind keyword.control",
-                "meta.at-rule.tailwind variable"
-            ],
-            "settings": {
-                "foreground": "#ffb571"
-            }
-        },
-        {
-            "name": "@apply @layer",
-            "scope": [
-                "source.css keyword.control.at-rule",
-                "source.css keyword.control.at-rule punctuation.definition"
-            ],
-            "settings": {
-                "foreground": "#ffb571"
+                "foreground": "#ff9142"
             }
         },
         {
             "name": "@apply content",
             "scope": [
-                "source.css meta.at-rule.apply entity"
+                "source.css meta.at-rule.apply entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#e0d6fe"
+                "foreground": "#a394e5",
+                "fontStyle": ""
             }
         },
         {
@@ -530,9 +525,75 @@
                 "source.css variable"
             ],
             "settings": {
-                "foreground": "#d4d4d8"
+                "foreground": "#d4d4d8",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "CSS Variables",
+            "scope": [
+                "source.css comment"
+            ],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Functions",
+            "scope": [
+                "source.dart entity.name.function"
+            ],
+            "settings": {
+                "foreground": "#fffac2"
+            }
+        },
+        {
+            "name": "Keywords and punctuation",
+            "scope": [
+                "source.dart keyword.control",
+                "source.dart punctuation.dot"
+            ],
+            "settings": {
+                "foreground": "#ffb571"
+            }
+        },
+        {
+            "name": "Keywords and punctuation",
+            "scope": [
+                "source.dart keyword.declaration"
+            ],
+            "settings": {
+                "foreground": "#ffb571"
+            }
+        },
+        {
+            "name": "Imports",
+            "scope": [
+                "source.c meta.preprocessor",
+                "source.c meta.preprocessor keyword.control",
+                "source.c meta.preprocessor punctuation.definition",
+                "source.python keyword.control.import"
+            ],
+            "settings": {
+                "foreground": "#ffb571",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Arguments in function",
+            "scope": [
+                "source.python meta.function-call.arguments"
+            ],
+            "settings": {
+                "foreground": "#e4e4e7"
             }
         }
     ],
-    "semanticHighlighting": false
+    "semanticHighlighting": false,
+    "semanticTokenColors": {
+        "namespace entity.name": {
+            "foreground": "#ffb571",
+            "fontStyle": "underline"
+        }
+    }
 }
