@@ -5,23 +5,34 @@ export default function (scheme) {
     colors: {
       "editor.background": scheme.editor.background,
       "editor.foreground": scheme.editor.foreground,
+      "editorGroup.border": scheme.editor.borders,
+      "editorGroupHeader.border": "#00000000",
+      "editorGroupHeader.tabsBorder": "#00000000",
       "editorLineNumber.activeForeground": scheme.editor.lineNumbers.active,
       "editorLineNumber.foreground": scheme.editor.lineNumbers.all,
       "editorGutter.addedBackground": "#4ade8033",
       "editorGutter.modifiedBackground": "#fb923c52",
-      // Active item in the tree and list
-      "list.activeSelectionBackground": "#c084fc33",
-      "list.activeSelectionForeground": "#d4d4d8",
-      // Hover item in the tree and list
+
+      "keybindingLabel.background": "#00000000",
+      "keybindingLabel.foreground": scheme.editor.keybindingLabel,
+      "keybindingLabel.border": `${scheme.editor.keybindingLabel}33`,
+      "keybindingLabel.bottomBorder": `${scheme.editor.keybindingLabel}33`,
+      "keybindingLabel.foregroundActive": scheme.editor.keybindingLabel,
+
+      "list.activeSelectionBackground": scheme.list.activeBackground,
+      "list.activeSelectionForeground": scheme.list.activeForeground,
       "list.hoverBackground": "#18181b",
       "list.hoverForeground": "#d4d4d8",
-
       "list.inactiveFocusBackground": "#1d2d3e",
       "list.inactiveSelectionBackground": "#18181b",
       "list.inactiveSelectionForeground": "#d4d4d8",
+      "list.highlightForeground": scheme.list.highlightForeground,
+      "list.focusHighlightForeground": scheme.list.highlightForeground,
+      "textLink.foreground": scheme.list.highlightForeground,
 
       "panel.background": scheme.panel.background,
       "quickInput.background": scheme.list.background,
+
       "sideBar.background": scheme.panel.background,
       "sideBar.border": scheme.editor.borders,
       "sideBar.foreground": "#6b7280",
@@ -37,6 +48,17 @@ export default function (scheme) {
       focusBorder: "#00000000",
 
       "statusBar.background": scheme.statusBar.background,
+      "statusBar.debuggingBackground": `${scheme.activityBar.activeBorder}33`,
+      "statusBarItem.remoteBackground": "#00000000",
+      "statusBarItem.remoteForeground": scheme.panel.foreground,
+      "statusBar.border": scheme.editor.borders,
+
+      "tab.activeBorder": scheme.activityBar.activeBorder,
+      "tab.activeBorderTop": scheme.editor.background,
+      "tab.activeBackground": scheme.editor.background,
+      "tab.inactiveBackground": scheme.editor.background,
+      "titleBar.activeBackground": scheme.editor.background,
+
       "titleBar.activeBackground": scheme.panel.background,
       "titleBar.border": scheme.editor.borders,
     },

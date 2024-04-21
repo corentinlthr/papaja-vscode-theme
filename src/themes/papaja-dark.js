@@ -23,21 +23,22 @@ const scheme = {
     variableDefaultLibrary: colors.yellow[100],
   },
   activityBar: {
-    activeBorder: colors.yellow[100],
-    foreground: colors.yellow[100],
-    badge: colors.yellow[100],
+    activeBorder: colors.orange[300],
+    foreground: colors.orange[200],
+    badge: colors.orange[400],
   },
   editor: {
     background: colors.gray[900],
     foreground: colors.gray[200],
     borders: colors.gray[800],
+    keybindingLabel: colors.gray[500],
     lineNumbers: {
       all: `${colors.gray[950]}00`,
       active: colors.gray[700],
     },
   },
   statusBar: {
-    background: `${colors.purple[500]}33`,
+    background: `${colors.gray[950]}55`,
   },
   panel: {
     background: colors.gray[950],
@@ -46,6 +47,9 @@ const scheme = {
   list: {
     background: colors.gray[800],
     foreground: colors.gray[300],
+    activeBackground: `${colors.orange[300]}22`,
+    activeForeground: colors.orange[200],
+    highlightForeground: colors.orange[300],
   },
   php: {
     use: `${colors.purple[300]}55`,
