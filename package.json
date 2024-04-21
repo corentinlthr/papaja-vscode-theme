@@ -28,6 +28,12 @@
                 "label": "Papaja Theme",
                 "uiTheme": "vs-dark",
                 "path": "./build/papaja-dark.json"
+            },
+            {
+                "label": "Papaja Theme Light",
+                "uiTheme": "vs",
+                "path": "./build/papaja-light.json"
+            },
             {
                 "label": "Papaja Theme (Original)",
                 "uiTheme": "vs-dark",
