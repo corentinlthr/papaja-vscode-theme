@@ -19,7 +19,8 @@
     ],
     "scripts": {
         "start": "nodemon --watch src --exec \"npm run build\"",
-        "build": "node ./src/build.js"
+        "build": "node ./src/build.js",
+        "publish": "vsce publish"
     },
     "contributes": {
         "themes": [
