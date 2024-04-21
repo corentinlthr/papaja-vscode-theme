@@ -391,7 +391,10 @@ export default function (scheme) {
       },
       {
         name: "Tag names Chevrons in React",
-        scope: ["source.js punctuation.definition.tag"],
+        scope: [
+          "source.jsx punctuation.definition.tag",
+          "source.tsx punctuation.definition.tag",
+        ],
         settings: {
           foreground: `${scheme.html.tag}${
             scheme.type === "dark" ? "55" : "88"
