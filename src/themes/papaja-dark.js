@@ -26,6 +26,7 @@ const scheme = {
     activeBorder: colors.orange[300],
     foreground: colors.orange[200],
     badge: colors.orange[400],
+    badgeForeground: colors.gray[900],
   },
   editor: {
     background: colors.gray[900],
@@ -39,6 +40,7 @@ const scheme = {
   },
   statusBar: {
     background: `${colors.gray[950]}55`,
+    foreground: colors.gray[200],
   },
   panel: {
     background: colors.gray[950],
@@ -60,14 +62,9 @@ const scheme = {
     customTag: colors.blue[400],
     livewire: colors.purple[400],
     attribute: colors.orange[300],
-    customAttribute: colors.blue[200],
+    customAttribute: colors.orange[300],
+    // customAttribute: colors.blue[200],
     blade: colors.orange[400],
-  },
-  json: {
-    key: colors.purple[300],
-  },
-  js: {
-    objectKey: colors.purple[300],
   },
   css: {
     property: colors.orange[200],

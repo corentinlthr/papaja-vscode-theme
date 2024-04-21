@@ -21,8 +21,6 @@ export default function (scheme) {
 
       "list.activeSelectionBackground": scheme.list.activeBackground,
       "list.activeSelectionForeground": scheme.list.activeForeground,
-      "list.hoverBackground": "#18181b",
-      "list.hoverForeground": "#d4d4d8",
       "list.inactiveFocusBackground": "#1d2d3e",
       "list.inactiveSelectionBackground": "#18181b",
       "list.inactiveSelectionForeground": "#d4d4d8",
@@ -44,13 +42,14 @@ export default function (scheme) {
       "activityBar.activeBorder": scheme.activityBar.activeBorder,
       "activityBar.foreground": scheme.activityBar.foreground,
       "activityBarBadge.background": scheme.activityBar.badge,
-      "activityBarBadge.foreground": "#000000",
+      "activityBarBadge.foreground": scheme.activityBar.badgeForeground,
       focusBorder: "#00000000",
 
       "statusBar.background": scheme.statusBar.background,
+      "statusBar.foreground": scheme.statusBar.foreground,
       "statusBar.debuggingBackground": `${scheme.activityBar.activeBorder}33`,
       "statusBarItem.remoteBackground": "#00000000",
-      "statusBarItem.remoteForeground": scheme.panel.foreground,
+      "statusBarItem.remoteForeground": scheme.statusBar.foreground,
       "statusBar.border": scheme.editor.borders,
 
       "tab.activeBorder": scheme.activityBar.activeBorder,
@@ -394,14 +393,18 @@ export default function (scheme) {
         name: "Tag names Chevrons in React",
         scope: ["source.js punctuation.definition.tag"],
         settings: {
-          foreground: `${scheme.html.tag}55`,
+          foreground: `${scheme.html.tag}${
+            scheme.type === "dark" ? "55" : "88"
+          }`,
         },
       },
       {
         name: "Tag names Chevrons",
         scope: ["text.html punctuation.definition.tag"],
         settings: {
-          foreground: `${scheme.html.tag}55`,
+          foreground: `${scheme.html.tag}${
+            scheme.type === "dark" ? "55" : "88"
+          }`,
         },
       },
       {
@@ -423,7 +426,9 @@ export default function (scheme) {
         name: "Custom Tags Chevrons: <x-foo>",
         scope: ["text.html meta.tag.custom punctuation.definition.tag"],
         settings: {
-          foreground: `${scheme.html.customTag}55`,
+          foreground: `${scheme.html.customTag}${
+            scheme.type === "dark" ? "55" : "88"
+          }`,
         },
       },
       {
