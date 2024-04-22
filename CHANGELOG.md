@@ -1,5 +1,10 @@
 # Change Log
 
+### `1.3.0` (2024-04-22)
+- Full rewrite of the theme to use semantic tokens
+- Color palette tweaks
+- New light version
+
 ### `1.2.4` (2023-12-09)
 - CSS: Improved colours
 - PHP: Improved attributes
@@ -16,4 +21,4 @@
 - Fixed too saturated class color
 
 ### `1.2.2` (2023-11-20)
-- Initial release
+- Initial public release
