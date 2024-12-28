@@ -21,9 +21,9 @@ export default function (scheme) {
 
       "list.activeSelectionBackground": scheme.list.activeBackground,
       "list.activeSelectionForeground": scheme.list.activeForeground,
-      "list.inactiveFocusBackground": "#1d2d3e",
-      "list.inactiveSelectionBackground": "#18181b",
-      "list.inactiveSelectionForeground": "#d4d4d8",
+      "list.inactiveFocusBackground": scheme.list.activeForeground,
+      "list.inactiveSelectionBackground": scheme.list.inactiveBackground,
+      "list.inactiveSelectionForeground": scheme.list.inactiveForeground,
       "list.highlightForeground": scheme.list.highlightForeground,
       "list.focusHighlightForeground": scheme.list.highlightForeground,
       "textLink.foreground": scheme.list.highlightForeground,

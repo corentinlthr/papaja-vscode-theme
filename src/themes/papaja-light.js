@@ -19,7 +19,7 @@ const scheme = {
     string: colors.green[700],
     stringQuote: colors.green[700],
     variable: colors.gray[900],
-    variableImportPrefix: colors.teal[200],
+    variableImportPrefix: colors.teal[600],
     variableDefaultLibrary: colors.yellow[700],
   },
   activityBar: {
@@ -52,6 +52,7 @@ const scheme = {
     activeBackground: `${colors.orange[500]}22`,
     activeForeground: colors.orange[700],
     highlightForeground: colors.orange[600],
+    inactiveBackground: colors.gray[200],
   },
   php: {
     use: `${colors.purple[800]}88`,
