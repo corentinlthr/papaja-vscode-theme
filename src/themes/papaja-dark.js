@@ -31,11 +31,11 @@ const scheme = {
   editor: {
     background: colors.gray[900],
     foreground: colors.gray[200],
-    borders: colors.gray[800],
+    borders: colors.gray[700],
     keybindingLabel: colors.gray[500],
     lineNumbers: {
-      all: `${colors.gray[950]}00`,
-      active: colors.gray[700],
+      all: `${colors.gray[600]}99`,
+      active: colors.gray[600],
     },
   },
   statusBar: {

@@ -30,12 +30,12 @@ const scheme = {
   },
   editor: {
     background: colors.gray[50],
-    foreground: colors.gray[900],
+    foreground: colors.gray[800],
     borders: colors.gray[300],
     keybindingLabel: colors.gray[500],
     lineNumbers: {
-      all: `${colors.gray[950]}00`,
-      active: colors.gray[700],
+      all: `${colors.gray[200]}`,
+      active: colors.gray[400],
     },
   },
   statusBar: {
