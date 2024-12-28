@@ -1,4 +1,8 @@
-# Change Log
+# Changelog
+
+### `1.3.1` (2024-12-28)
+- Fixed color for focused items in inactive lists in light theme
+- Restored line numbers in both light and dark themes
 
 ### `1.3.0` (2024-04-22)
 - Full rewrite of the theme to use semantic tokens

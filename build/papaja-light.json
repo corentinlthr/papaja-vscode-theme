@@ -3,12 +3,12 @@
     "type": "light",
     "colors": {
         "editor.background": "#fafafa",
-        "editor.foreground": "#18181b",
+        "editor.foreground": "#27272a",
         "editorGroup.border": "#d4d4d8",
         "editorGroupHeader.border": "#00000000",
         "editorGroupHeader.tabsBorder": "#00000000",
-        "editorLineNumber.activeForeground": "#3f3f46",
-        "editorLineNumber.foreground": "#09090b00",
+        "editorLineNumber.activeForeground": "#a1a1aa",
+        "editorLineNumber.foreground": "#e4e4e7",
         "editorGutter.addedBackground": "#4ade8033",
         "editorGutter.modifiedBackground": "#fb923c52",
         "keybindingLabel.background": "#00000000",
@@ -18,9 +18,8 @@
         "keybindingLabel.foregroundActive": "#71717a",
         "list.activeSelectionBackground": "#fe6a1122",
         "list.activeSelectionForeground": "#c63908",
-        "list.inactiveFocusBackground": "#1d2d3e",
-        "list.inactiveSelectionBackground": "#18181b",
-        "list.inactiveSelectionForeground": "#d4d4d8",
+        "list.inactiveFocusBackground": "#c63908",
+        "list.inactiveSelectionBackground": "#e4e4e7",
         "list.highlightForeground": "#ef4e07",
         "list.focusHighlightForeground": "#ef4e07",
         "textLink.foreground": "#ef4e07",
@@ -92,7 +91,7 @@
             "fontStyle": "italic"
         },
         "variable.importPrefix": {
-            "foreground": "#93fcf3"
+            "foreground": "#05a8aa"
         },
         "variable.defaultLibrary": {
             "foreground": "#a46404"
